@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Onlineshop | Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Online Shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="src/libs/swal2/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="src/libs/swal2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="src/main.css" />
+</head>
+
+<body>
+    <!-- Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="fl-r">
+                    <a class="nav-icon" href="basket.html"><i class="fa fa-shopping-cart"></i></a>
+                    <a class="nav-icon" href="panel/index.html"><i class="fa fa-user"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Checkout -->
+        <section id="login-section">
+            <form id="main-form">
+                <h1>Let's sign you in.</h1>
+                <h2>Welcome back.</h2>
+                <h3>You've been missed!</h3>
+                <table id="checkout-table">
+                    <tr>
+                        <td style="width: 120px;">
+                            <label>Username</label>
+                        </td>
+                        <td>
+                            <input type="text" name="username" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 120px;">
+                            <label>Password</label>
+                        </td>
+                        <td>
+                            <input type="password" name="password" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a id="action-btn" class="btn fl-r" onclick="login()">Login</a>
+                            <span id="please-wait">Please Wait ...</span>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+
+
+    <br />
+    <br />
+    <!-- Map -->
+    <section class="map-box">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.3188063024178!2d51.45801582922629!3d35.76861508691208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e04690d2f9a8b%3A0x20d306f4bb32bc01!2z2K_aqdiq2LEg2KzZhdi024zYr9uM!5e0!3m2!1sen!2s!4v1646752853010!5m2!1sen!2s"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <div class="footer-1">
+            <h4>About</h4>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente quos nostrum deserunt nam libero cum
+                alias, minima obcaecati sequi, odio odit magnam modi quas unde. Nihil saepe error et ab.
+            </p>
+        </div>
+        <div class="footer-2">
+            <h4>Social</h4>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="products.html"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li><a href="blog.html"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                    <li><a href="about.html"><i class="fab fa-youtube fa-2x"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-3">
+            <h4>Links</h4>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <div id="bottom-footer">
+        <h3>Design & Develop by <a href="https:///">Mahdi Ghavidel</a></h3>
+    </div>
+
+
+    <!-- Utils -->
+    <script src="src/utils/SiteUtils.js"></script>
+
+    <!-- Global API -->
+    <script src="api/ApiAddress.js"></script>
+    <script src="api/BaseAPI.js"></script>
+
+    <!-- User -->
+    <script src="api/UserAPI.js"></script>
+    <script src="controllers/LoginController.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Onlineshop | Basket</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Online Shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/main.css" />
+</head>
+
+<body>
+    <!-- Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="fl-r">
+                    <a class="nav-icon" href="basket.html"><i class="fa fa-shopping-cart"></i></a>
+                    <a class="nav-icon" href="panel/index.html"><i class="fa fa-user"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Basket -->
+        <section id="basket-section">
+            <h2 class="center section-title">Basket <i class="fa fa-shopping-cart"></i></h2>
+            <table id="basket-table">
+                <tr>
+                    <td colspan="3">
+                        <h1 class="center">Your basket is empty!</h1>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <h3 id="basket-sum">Total Price : 8500$</h3>
+            </div>
+        </section>
+        <br />
+        <br />
+        <br />
+        <div class="center">
+            <a class="btn" href="checkout.html">Proceed To Payment</a>
+        </div>
+        <br />
+        <br />
+    </main>
+
+
+    <br />
+    <br />
+    <!-- Map -->
+    <section class="map-box">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.3188063024178!2d51.45801582922629!3d35.76861508691208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e04690d2f9a8b%3A0x20d306f4bb32bc01!2z2K_aqdiq2LEg2KzZhdi024zYr9uM!5e0!3m2!1sen!2s!4v1646752853010!5m2!1sen!2s"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <div class="footer-1">
+            <h4>About</h4>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente quos nostrum deserunt nam libero cum
+                alias, minima obcaecati sequi, odio odit magnam modi quas unde. Nihil saepe error et ab.
+            </p>
+        </div>
+        <div class="footer-2">
+            <h4>Social</h4>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="products.html"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li><a href="blog.html"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                    <li><a href="about.html"><i class="fab fa-youtube fa-2x"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-3">
+            <h4>Links</h4>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <div id="bottom-footer">
+        <h3>Design & Develop by <a href="https:///">Mahdi Ghavidel</a></h3>
+    </div>
+
+    <div id="templates">
+        <table id="basket-template">
+            <tbody id="basket-template-body">
+                <tr id="basket-item-__ID____CID____SID__">
+                    <td style="width:200px">
+                        <img src="__IMG__" width="150px" />
+                    </td>
+                    <td>
+                        <h2>__TITLE__</h2>
+                        <h3>__PRICE__$</h3>
+                    </td>
+                    <td style="width:200px">
+                        <div class="product-size-link">
+                            <div class="product-size">__STITLE__</div>
+                        </div>
+                        <div class="product-color-link" title="__CTITLE__">
+                            <div class="product-color" style="background-color:#__CHEX__"></div>
+                        </div>
+                    </td>
+                    <td style="width: 15px;">
+                        <b id="qty___ID____CID____SID__">__QTY__</b>
+                    </td>
+                    <td style="width: 25px;">
+                        <input type="button" class="btn-basket" value="+"
+                            onclick="increaseQTY(__ID__,__CID__,__SID__)" />
+                        <br />
+                        <input type="button" class="btn-basket" value="-"
+                            onclick="decreaseQTY(__ID__,__CID__,__SID__)" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Utils -->
+    <script src="src/utils/SiteUtils.js"></script>
+
+    <!-- Global API -->
+    <script src="api/ApiAddress.js"></script>
+    <script src="api/BaseAPI.js"></script>
+
+    <!-- Basket -->
+    <script src="models/Basket.js"></script>
+    <script src="db/BasketDB.js"></script>
+    <script src="controllers/BasketController.js"></script>
+
+    <!-- Main -->
+    <script src="src/pages/basket.js"></script>
+
+</body>
+
+</html>
