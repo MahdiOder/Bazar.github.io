@@ -1,0 +1,6 @@
+cleaning
+login
+panel
+edit user
+invoice list
+show invoice

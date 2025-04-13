@@ -1,0 +1,40 @@
+site 
+www.shop.com => خریداری شده
+host => خودمون میخریم
+cms => wordpress (xxxxxxx) => سایت اختصاصی میخواهم
+site => backend (api) + front
+ +++ => [+] fullstack => api + front (کامل خودم میزنم)
+ +++ => [+] front-end => خودم فرانت میزنم + دوستم بک اش رو میزند
+ +++ => [+] front-end => خودم فرانت میزنم + بک رو شما زدید
+==> همین الان API آماده است
+
+https://holosen.net/api
+
+===================================
+Slider => offer => Home
+Popular Product => Home
+Footer => address / about / social / tel
+About-us / Contact-Us
+Blog => مقالات
+Product Category (1-level) => Shoes / T-Shirt / ...
+cat => (n) Product
+product => size / color (dynamic)
+features => x ندارد
+?????
+====================================
+(Swagger)
+https://onlineshop.holosen.net:9090/swagger-ui/
+https://onlineshop.holosen.net:9090/api/slider
+====================================
+Api Developer (backend) => 09121234567
+
+
+====================================
+300 hours => 2 month
+40,000 per hours
+12,000,000 Toman
+4,000,000 => (1)
+6,000,000 => (2)
+2,000,000 => (3)
+
+====================================

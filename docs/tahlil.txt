@@ -1,0 +1,89 @@
+Blog {
+     "addDate": "string",
+      "description": "string",
+      "id": 0,
+      "image": "string",
+      "subTitle": "string",
+      "title": "string",
+      "visitCount": 0
+}
+Color {
+      "hexValue": "string",
+      "id": 0,
+      "title": "string"
+}
+Content{
+     "description": "string",
+      "id": 0,
+      "title": "string"
+}
+Invoice{
+    ///....
+}
+category {
+      "id": 0,
+      "image": "string",
+      "title": "string"
+}
+
+product{
+      "addDate": "string",
+      "category": {},
+      "colors": [
+        {}
+      ],
+      "description": "string",
+      "id": 0,
+      "image": "string",
+      "price": 0,
+      "sizes": [
+        {}
+      ],
+      "title": "string",
+      "visitCount": 0
+}
+slider{
+      "id": 0,
+      "image": "string",
+      "link": "string",
+      "subTitle": "string",
+      "title": "string"
+    }
+
+user{
+    "customer": {},
+      "id": 0,
+      "password": "string",
+      "username": "string"
+    }
+}
+customer: {
+    "address": "string",
+    "firstName": "string",
+    "id": 0,
+    "lastName": "string",
+    "phone": "string",
+    "postalCode": "string"
+}
+
+size{
+    "id": 0,
+    "title": 0
+}
+transaction{
+      "code": 0,
+      "invoiceNumber": 0,
+      "referenceId": "string",
+      "status": "string"
+    }
+==============================
+11 models 
+1 model => {
+    CRUD : [
+        Create => 1 page for add a new data,
+        Update => 1 page for modify a data,
+        Read => 1 page for list data,
+        Delete => 1 action in list,
+        + => show to user (list + single view)
+    ]
+}

@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "product": {
+        "colors": [
+          {
+            "id": 0
+          }
+        ],
+        "id": 0,
+        "sizes": [
+          {
+            "id": 0
+          }
+        ]
+      },
+      "quantity": 0
+    }
+  ],
+  "user": {
+    "address": "string",
+    "firstName": "string",
+    "lastName": "string",
+    "password": "string",
+    "phone": "string",
+    "postalCode": "string",
+    "username": "string"
+  }
+}
